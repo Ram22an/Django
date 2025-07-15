@@ -1,5 +1,5 @@
 # Ignore the virtual environment folder
-DjangoENV/
+DjangoLearn/
 
 # Byte-compiled / cached files
 __pycache__/
