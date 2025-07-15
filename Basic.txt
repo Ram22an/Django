@@ -58,6 +58,8 @@ To create super user
 python manage.py createsuperuser 
 this is the only command and then django will guid you to create super user
 
+for changing the password
+python manage.py changepassword YOUR_USER_NAME
 
 
 
