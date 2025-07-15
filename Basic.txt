@@ -61,6 +61,9 @@ this is the only command and then django will guid you to create super user
 for changing the password
 python manage.py changepassword YOUR_USER_NAME
 
+for creating tables
+python manage.py makemigrations
+
 
 
 
