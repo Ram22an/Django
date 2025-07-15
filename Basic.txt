@@ -46,6 +46,11 @@ Easy to Read:- typically json or XML formate
 
 
 
+To make **simple** django project use
+django-admin startproject NAME .
+dot is important
+
+
 
 
 
