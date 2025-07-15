@@ -1,1 +1,51 @@
 API is application programming interface
+it act as 2 way communication bridge between frontend and backend
+
+
+
+REST API stands for Representational State Transfer API.
+
+It is a specific type of Web API that follows REST principles. These are:
+
+Stateless — each request is independent.
+
+Uses HTTP methods:
+
+GET: Retrieve data
+
+POST: Create new data
+
+PUT/PATCH: Update existing data
+
+DELETE: Remove data
+
+Works with resources — identified via URLs (like api/users/5)
+
+Usually returns data in JSON format
+
+The core principles of REST API are 
+Stateless:- server doesn't store any information about client between requests
+Client Server architecture:- client asks for data and server does what's the requested
+Standardized interface:- it rely on set of standard methods (GET,POST,PUT,DELETE)
+                    GET:- retrieving the resource
+                    POST:- creating the resource
+                    PUT:- updating the resource
+                    DELETE:- deleting the resource
+Easy to Read:- typically json or XML formate
+
+
+
+| API Type               | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **SOAP**               | Old, XML-based protocol with strict rules and WSDL contracts               |
+| **GraphQL**            | Lets client ask for exactly what data they need, often replacing REST      |
+| **gRPC**               | High-performance RPC framework by Google, uses Protocol Buffers (not JSON) |
+| **WebSockets**         | Real-time, two-way communication between client and server                 |
+| **JSON-RPC / XML-RPC** | Lightweight alternatives using JSON or XML for remote procedure calls      |
+| **OpenAPI / Swagger**  | Specification and tools to document and interact with REST APIs            |
+
+
+
+
+
+
