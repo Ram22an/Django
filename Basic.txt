@@ -50,6 +50,10 @@ To make **simple** django project use
 django-admin startproject NAME .
 dot is important
 
+To run server use this command 
+python manage.py runserver
+
+
 
 
 
