@@ -16,9 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views  # Importing views from the current directory
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/',views.home)
 ]
 
 # urls stands for universal resource locator
