@@ -10,10 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
+# ** my comments
+
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+# **it is getting root directory dynamically
 
 
 # Quick-start development settings - unsuitable for production
@@ -21,15 +24,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure--bu+p$95-^%+&j8un(35hub5$(*q5a+#v@^kaip@vzj2&-ms6^'
+# **it is a secret key used for hashing
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+# **this is bool value telling debug mode is on or off
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# **django modules(used to perform business logic)
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -39,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# **middleware are used to perform various operations
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -49,8 +55,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# **the main urls.py resides in this path
 ROOT_URLCONF = 'MyFirstDjangoProject.urls'
 
+# **this is responsible for rendering the forntend templates
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -66,12 +74,13 @@ TEMPLATES = [
     },
 ]
 
+# **this tell from where wsgi application should run
 WSGI_APPLICATION = 'MyFirstDjangoProject.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
-
+# **this is the default database configuration using sqlite3
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -82,7 +91,7 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
-
+# ** default password validators
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -113,10 +122,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
-
+# **any css files, js files are called as static files
 STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# this is the most important file
+# as it is used for adding all the configuration of django project
+
+
+
