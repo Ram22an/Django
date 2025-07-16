@@ -1,4 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 def home(request):
-    return HttpResponse("<h1>Welcome to My First Django Project!</h1>")
+    # return HttpResponse('')
+    # this simply return some html code
+
+    # this renders a whole template 
+    return render(request,'home/home.html')
 
