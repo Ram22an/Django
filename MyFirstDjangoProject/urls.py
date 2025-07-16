@@ -20,7 +20,10 @@ from . import views  # Importing views from the current directory
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',views.home)
+    path('',views.home) ,
+    # ⬆️mean this is what we will see as default
+
+    # path('home/',views.home)
 ]
 
 # urls stands for universal resource locator
