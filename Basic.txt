@@ -67,7 +67,16 @@ for creating tables
 python manage.py makemigrations
 
 
+django use mvt(model view template) software design pattern
+this model is responsible for each and every database operation
+want to do anything related to database then contact this database
 
+template is basically the user facing layout
+
+views work as the bridge between model and template
+views tells the model that i need something please give me
+now model fill get that data and give that to the views
+and views than pass that data to template where user can see it
 
 
 
