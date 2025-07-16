@@ -53,6 +53,8 @@ dot is important
 To run server use this command 
 python manage.py runserver
 
+To Create new app
+python manage.py startapp APPNAME
 
 To create super user
 python manage.py createsuperuser 
