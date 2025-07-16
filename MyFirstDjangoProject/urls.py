@@ -20,3 +20,9 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+# urls stands for universal resource locator
+# it contain all the endpoints that we should have in our website
+# it is used to provide address of the resources (images, web pages, websites)
+# it tell django if a user comes with this specific url direct them to the particular resource
+
