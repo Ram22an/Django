@@ -124,9 +124,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 # **any css files, js files are called as static files
 STATIC_URL = 'static/'
+# **this is a url which will serve static files
 
 STATIC_ROOT = BASE_DIR / 'static'
 
+
+# **this is the list of directories where django will look for static files
 STATICFILES_DIRS =['MyFirstDjangoProject/static']
 
 # Default primary key field type
