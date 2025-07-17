@@ -125,6 +125,10 @@ USE_TZ = True
 # **any css files, js files are called as static files
 STATIC_URL = 'static/'
 
+STATIC_ROOT = BASE_DIR / 'static'
+
+STATICFILES_DIRS =['MyFirstDjangoProject/static']
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
