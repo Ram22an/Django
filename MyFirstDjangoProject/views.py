@@ -5,5 +5,5 @@ def home(request):
     # this simply return some html code
 
     # this renders a whole template 
-    return render(request,'home/home.html')
+    return render(request,'home.html')
 
