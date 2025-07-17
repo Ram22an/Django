@@ -125,6 +125,8 @@ USE_TZ = True
 # **any css files, js files are called as static files
 STATIC_URL = 'static/'
 # **this is a url which will serve static files
+# **when we inspect the page and click on static files this
+# **will be the url used to access static files
 
 STATIC_ROOT = BASE_DIR / 'static'
 
