@@ -79,4 +79,10 @@ now model fill get that data and give that to the views
 and views than pass that data to template where user can see it
 
 
+difference between django-admin startproject myproject and python manage.py startapp blog this commands
+| Command                               | What It Creates | Is It an App? | Purpose                                |
+| ------------------------------------- | --------------- | ------------- | -------------------------------------- |
+| `django-admin startproject myproject` | Project folder  | ❌ No          | Global project settings and structure  |
+| `python manage.py startapp blog`      | App folder      | ✅ Yes         | Actual app logic (views, models, etc.) |
+
 
