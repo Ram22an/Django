@@ -86,3 +86,23 @@ difference between django-admin startproject myproject and python manage.py star
 | `python manage.py startapp blog`      | App folder      | ✅ Yes         | Actual app logic (views, models, etc.) |
 
 
+To serve static files(image, Css and javascript files) we have to add
+these line to the setting file of the project
+after this line STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS =['YOUR_PROJECT_NAME/static']
+then create a folder name 'static' under the project
+
+
+
+First thing is to when create app go to the main django project
+then setting and then INSTALLED_APPS add your app name there
+
+
+when created some app and then made any models(Database tables) in it 
+these command in sequence
+python manage.py makemigrations
+python manage.py migrate
+
+
+
