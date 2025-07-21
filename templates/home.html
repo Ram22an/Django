@@ -53,5 +53,14 @@
       </table>
       <img src="{% static 'images/django.jpeg' %}" alt="error" />
     </div>
+    <!-- The double curly braces are Django Template Language (DTL) syntax. -->
+    <!-- {{employees}} -->
+    <h1>Employee</h1>
+    <ul>
+      {% for employee in employees %}
+      <li>{{employee.frist_name}}</li>
+      <li>{{employee.last_name}}</li>
+      {% endfor %}
+    </ul>
   </body>
 </html>
