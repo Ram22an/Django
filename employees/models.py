@@ -14,7 +14,7 @@ from django.db import models
 # **To create a table first create a class
 class Employee(models.Model):
     # **these are fields of the table
-    frist_name=models.CharField(max_length=100)
+    first_name=models.CharField(max_length=100)
     last_name=models.CharField(max_length=100)
     photo=models.ImageField(upload_to='photos/')
     designation=models.CharField(max_length=100)
@@ -28,7 +28,7 @@ class Employee(models.Model):
     # **auto_now=True is used to set the current date and time when the object is updated
 
     def __str__(self):
-        return self.frist_name+"@"+self.designation
+        return self.first_name+"@"+self.designation
     # **this function will change the string representation of the object
     # **to the first name of the employee
 

@@ -58,9 +58,32 @@
     <h1>Employee</h1>
     <ul>
       {% for employee in employees %}
-      <li>{{employee.frist_name}}</li>
+      <li>{{employee.first_name}}</li>
       <li>{{employee.last_name}}</li>
       {% endfor %}
     </ul>
+    <div class="container pt-10">
+      <h1>Employee Table</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Full name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for employee in employees %}
+          <tr>
+            <th>{{ forloop.counter }}</th>
+            <th>{{ employee.first_name }} {{ employee.last_name }}</th>
+            <th>{{ employee.email }}</th>
+            <th>{{ employee.phone_number }}</th>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
