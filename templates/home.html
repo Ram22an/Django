@@ -71,6 +71,7 @@
             <th scope="col">Full name</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
+            <th scope="col">Photo</th>
           </tr>
         </thead>
         <tbody>
@@ -80,6 +81,16 @@
             <th>{{ employee.first_name }} {{ employee.last_name }}</th>
             <th>{{ employee.email }}</th>
             <th>{{ employee.phone_number }}</th>
+            <th>
+              <img
+                src="{{ employee.photo.url }}"
+                alt="photo"
+                style="max-height: 100px; border-radius: 6px"
+              />
+              <!-- Why used .url not simple employee.photo-->
+              <!-- because employee.photo will give photos/john.jpg -->
+              <!-- employee.photo.url will give /media/photos/john.jpg -->
+            </th>
           </tr>
           {% endfor %}
         </tbody>
