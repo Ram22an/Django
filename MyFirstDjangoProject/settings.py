@@ -145,4 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # as it is used for adding all the configuration of django project
 
 
+# **this is for the media files(media files are the files uploaded by users)
+MEDIA_URL='/media/'
+MEDIA_ROOT=BASE_DIR / 'media'
 

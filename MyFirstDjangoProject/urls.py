@@ -18,13 +18,19 @@ from django.contrib import admin
 from django.urls import path
 from . import views  # Importing views from the current directory
 
+from django.conf import settings
+from django.conf.urls.static import static
+# **this is the importing of static files and urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home) ,
+
     # ⬆️mean this is what we will see as default
 
     # path('home/',views.home)
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# **adding this line ⬆️ we can access the media files
+
 
 # urls stands for universal resource locator
 # it contain all the endpoints that we should have in our website

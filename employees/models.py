@@ -27,7 +27,10 @@ class Employee(models.Model):
     updated_at=models.DateTimeField(auto_now=True)
     # **auto_now=True is used to set the current date and time when the object is updated
 
-
+    def __str__(self):
+        return self.frist_name
+    # **this function will change the string representation of the object
+    # **to the first name of the employee
 
 
 
