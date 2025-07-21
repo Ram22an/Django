@@ -28,7 +28,7 @@ class Employee(models.Model):
     # **auto_now=True is used to set the current date and time when the object is updated
 
     def __str__(self):
-        return self.frist_name
+        return self.frist_name+"@"+self.designation
     # **this function will change the string representation of the object
     # **to the first name of the employee
 
