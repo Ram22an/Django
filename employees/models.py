@@ -16,7 +16,7 @@ class Employee(models.Model):
     # **these are fields of the table
     frist_name=models.CharField(max_length=100)
     last_name=models.CharField(max_length=100)
-    photo=models.ImageField(upload_to='photos/%Y/%m/%d/')
+    photo=models.ImageField(upload_to='photos/')
     designation=models.CharField(max_length=100)
     email=models.EmailField(max_length=100,unique=True)
     # **unique=True is used to make sure that the email is unique
