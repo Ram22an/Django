@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 # **this is the importing of static files and urls
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home) ,
+    path('',views.home,name='home'),  # ⬆️this is the home page of our website,
 
     # ⬆️mean this is what we will see as default
 

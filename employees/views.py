@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from employees.models import Employee
-from django.http import Http404, HttpResponse
+from django.shortcuts import get_object_or_404
 # Create your views here.
 
 
@@ -8,10 +8,9 @@ from django.http import Http404, HttpResponse
 
 
 def employee_detail(request,Id):
-    try:
-        employee=Employee.objects.get(id=Id)
-        print(employee)
-    except:
-        raise Http404("Employee not found")
-    return HttpResponse(employee.first_name)
+    employee=get_object_or_404(Employee,id=Id)
+    context={
+        'employee':employee,
+    }
+    return render(request,'employee_detail.html',context)
 
